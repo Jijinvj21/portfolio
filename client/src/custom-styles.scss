@@ -1,0 +1,22 @@
+// Define the color variable without quotes
+
+
+// Custom Classes
+.container-fluid {
+  padding: 0 !important;
+}
+
+h2 {
+  font-weight: 700 !important;
+}
+
+p {
+  margin: 0 !important;
+}
+
+.btn {
+  width: max-content;
+}
+
+// Import Bootstrap at the bottom
+@import "bootstrap/scss/bootstrap";

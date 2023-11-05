@@ -1,0 +1,15 @@
+.index_page{
+    .scroll_top{
+        .inner_div{
+
+            position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        }
+       
+    }
+}

@@ -1,0 +1,16 @@
+/* ContactForm.css */
+.contact_page{
+
+.form-control{
+  outline: gray;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0%;
+}
+    .form-control:focus {
+        box-shadow: none;
+        outline: gray;
+      }
+}
+  
