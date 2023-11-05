@@ -4,7 +4,7 @@ import  { createContext, useState } from 'react';
 const CountContext = createContext();
 
 // Count Provider component
-const CountProvider = ({ children }) => {
+const CountProvider = (children ) => {
   const [route, setRoute] = useState("");
 
   const url = (pathUrl) => {
