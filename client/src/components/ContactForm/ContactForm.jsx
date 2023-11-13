@@ -14,9 +14,9 @@ function ContactForm() {
   return (
     <>
 <h1 className="pb-2 fw-bold">Contact </h1>
-    <section className="contact_page shadow-lg rounded p-3 fw-semibold">
+    <section className="contact_page  rounded p-3 fw-semibold">
    
-    <Form onSubmit={handleSubmit} className="border  p-2 rounder" >
+    <Form onSubmit={handleSubmit} className="  p-2 rounder" >
       <Form.Group className="mb-3" controlId="formName">
         {/* <Form.Label>Name</Form.Label> */}
         <Form.Control
@@ -48,8 +48,8 @@ function ContactForm() {
           />
       </Form.Group>
 
-      <Button className="w-100" variant="secondary" type="submit">
-        Submit
+      <Button className="w-100 fw-bold rounded-3 py-2 fs-5 mt-3 bg-secondary text-light  text-center " variant="secondary" type="submit">
+        SUBMIT
       </Button>
     </Form>
     </section>

@@ -1,5 +1,8 @@
 import { Button } from "react-bootstrap";
 import "./Resume.scss";
+import pdf from '../../assets/images/pdf.svg'
+
+
 function Resume() {
   return (
     <section id="resume" className="resume pb-3">
@@ -7,9 +10,17 @@ function Resume() {
         <div className="section-title">
           <h1 className="fw-bold ">Resume</h1>
         </div>
-        <a href="/assets/Jijin_vj_Resume_Web_Developer.pdf" download>
-          <Button  className="download-btn bg-secondary border-0 my-3">Download Resume</Button>
-        </a>
+        <a
+  href='../../assets/PDF/Jijin_vj_Resume_Web_Developer.pdf'
+  target='_blank'
+  rel='noopener noreferrer'
+  download
+>
+  <Button className='download-btn bg-secondary border-0 my-3 py-auto justify-content-center align-items-center'>
+    Download Resume <img src={pdf} alt='pdf' width={35} />
+  </Button>
+</a>
+
 
         <div className="row fw-semibold">
           <div className="">
