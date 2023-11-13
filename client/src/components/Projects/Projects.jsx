@@ -41,7 +41,7 @@ function Projects() {
               });
             }}
           >
-            <img src={godox} alt="godox" className="rounded-3 " />
+            <img src={godox} alt="godox" className="rounded-3 " loading="lazy" />
             <div className="position-absolute z-5 top-50 start-50 translate-middle text-light text-center ">
               <h4 className="fw-bold  shadow-sm p-0 m-0">Godox</h4>
               <p className="p-0 m-0 fw-semibold ">2022</p>
@@ -62,7 +62,7 @@ function Projects() {
               });
             }}
           >
-            <img src={Rental} alt="Rental" className="rounded-3 " />
+            <img src={Rental} alt="Rental" className="rounded-3 "  loading="lazy"/>
             <div className="position-absolute z-5 top-50 start-50 translate-middle text-light text-center ">
               <h4 className="fw-bold  shadow-sm p-0 m-0">Rental</h4>
               <p className="p-0 m-0 fw-semibold ">2023</p>
@@ -82,7 +82,7 @@ function Projects() {
               });
             }}
           >
-            <img src={Password} alt="Password" className="rounded-3 " />
+            <img src={Password} alt="Password" className="rounded-3 "loading="lazy" />
             <div className="position-absolute z-5 top-50 start-50 translate-middle text-light text-center ">
               <h4 className="fw-bold  shadow-sm p-0 m-0">Password Generator</h4>
               <p className="p-0 m-0 fw-semibold ">2023</p>
@@ -104,7 +104,7 @@ function Projects() {
                   });
                 }}
               >
-                <img src={Weather} alt="Weather" className="rounded-3 " />
+                <img src={Weather} alt="Weather" className="rounded-3 " loading="lazy" />
                 <div className="position-absolute z-5 top-50 start-50 translate-middle text-light text-center ">
                   <h4 className="fw-bold  shadow-sm p-0 m-0">Weather App</h4>
                   <p className="p-0 m-0 fw-semibold ">2023</p>
@@ -124,7 +124,7 @@ function Projects() {
                   });
                 }}
               >
-                <img src={ToDo} alt="To-Do" className="rounded-3  border" />
+                <img src={ToDo} alt="To-Do" className="rounded-3  border" loading="lazy"/>
                 <div className="position-absolute z-5 top-50 start-50 translate-middle   text-center ">
                   <h4 className="fw-bold   p-0 m-0">To-Do List</h4>
                   <p className="p-0 m-0 fw-semibold ">2023</p>
@@ -144,7 +144,7 @@ function Projects() {
                   });
                 }}
               >
-                <img src={Netflix} alt="Netflix" className="rounded-3 " />
+                <img src={Netflix} alt="Netflix" className="rounded-3 "loading="lazy" />
                 <div className="position-absolute z-5 top-50 start-50 translate-middle text-light text-center ">
                   <h4 className="fw-bold  shadow-sm p-0 m-0">Netflix</h4>
                   <p className="p-0 m-0 fw-semibold ">2023</p>
@@ -170,6 +170,7 @@ function Projects() {
                 alt={modalData.image}
                 width={800}
                 className="rounded-3 border border-3 "
+                loading="lazy"
               />
             </div>
             <div className="py-3 d-flex flex-column gap-1">
