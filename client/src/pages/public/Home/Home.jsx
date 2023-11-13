@@ -12,11 +12,9 @@ import { useEffect } from "react";
 import { CountContext } from "../../../components/Context/ContextProvider/ContextProvider";
 import { useContext } from "react";
 import upArrow from '../../../assets/images/up-circle-svgrepo-com.svg'
-
 function Home() {
   const { route } = useContext(CountContext);
-  // const contactRef = useRef(null);
-  // console.log(contactRef.current)
+  
   useEffect(() => {
     switch (route) {
       case "home":
@@ -62,13 +60,16 @@ function Home() {
   return (
     <Container id="home" className=" index_page px-md-5 text-start">
       <section className="description_section  pb-3 ">
+        <div className="header_img">
+
         <img
           src={
             "https://media.licdn.com/dms/image/D5603AQEgvXcly4bLxg/profile-displayphoto-shrink_800_800/0/1666931603563?e=2147483647&v=beta&t=nGlLitovlB7wWI0zwG-7RK7w_TWL9ni-tWEDs_Tp9LI"
           }
           alt="Jijin vj"
-          className="rounded-pill object-fit-contain w-25 "
+          className="rounded-pill object-fit-contain w-25 p-2 "
         />
+        </div>
         <p className="py-3 fw-bold fs-1">
           Hey, I am Jijin VJ, a self-taught MERN stack developer.
         </p>
