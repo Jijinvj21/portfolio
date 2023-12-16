@@ -41,7 +41,7 @@ function Projects() {
               });
             }}
           >
-            <img src={godox} alt="godox" className="rounded-3 " loading="lazy" />
+            <img src={godox} alt="godox" className="rounded-3 " loading="lazy"  />
             <div className="position-absolute z-5 top-50 start-50 translate-middle text-light text-center ">
               <h4 className="fw-bold  shadow-sm p-0 m-0">Godox</h4>
               <p className="p-0 m-0 fw-semibold ">2022</p>

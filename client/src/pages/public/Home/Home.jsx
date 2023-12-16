@@ -69,7 +69,9 @@ function Home() {
               "https://media.licdn.com/dms/image/D5603AQEgvXcly4bLxg/profile-displayphoto-shrink_800_800/0/1666931603563?e=2147483647&v=beta&t=nGlLitovlB7wWI0zwG-7RK7w_TWL9ni-tWEDs_Tp9LI"
             }
             alt="Jijin vj"
-            className="rounded-pill object-fit-contain w-25 p-2 "
+            className="rounded-pill object-fit-contain  p-2 "
+            width={300}
+            height={300}
           />
         </div>
         <div className="d-flex  flex-column flex-md-row gap-3 justify-content-center  align-items-center ">
