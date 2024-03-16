@@ -24,9 +24,18 @@ function Projects() {
 
   return (
     <section className="projects_section pb-5">
+      <div className="d-flex">
       <h1 className="fw-bold">Projects</h1>
+      {!viewMore && (
+          <div className=" rounded-3 py-1  bg-secondary text-light  text-center  ms-auto  p-2 my-auto" onClick={() => setViewMore(true)}>
+            <p className="fw-bold " >
+              LOAD MORE
+            </p>
+          </div>
+        )}
+      </div>
       <div className="p-5">
-        <div className="cards  d-flex flex-wrap gap-5">
+        <div className="cards  d-flex flex-wrap justify-content-center gap-5">
           <div
             className="card rounded-3 p-3 position-relative  "
             onClick={() => {
@@ -37,7 +46,7 @@ function Projects() {
                 tech: "MERN stack",
                 type: "E COMMERCE APPLICATION",
                 GitLink: "https://github.com/Jijinvj21/godox-e-commerce-",
-                ProjectLink: "https://www.godox.website/",
+                ProjectLink: "https://godox.jijinvj.tech/",
               });
             }}
           >
@@ -88,9 +97,7 @@ function Projects() {
               <p className="p-0 m-0 fw-semibold ">2023</p>
             </div>
           </div>
-          {viewMore && (
-            <>
-              <div
+          <div
                 className="card rounded-3 p-3 position-relative  "
                 onClick={() => {
                   setViewModal(true);
@@ -110,6 +117,9 @@ function Projects() {
                   <p className="p-0 m-0 fw-semibold ">2023</p>
                 </div>
               </div>
+          {viewMore && (
+            <>
+              
               <div
                 className="card rounded-3 p-3 position-relative border-none  "
                 onClick={() => {
@@ -153,13 +163,7 @@ function Projects() {
             </>
           )}
         </div>
-        {!viewMore && (
-          <div className=" rounded-3 py-2 pt-3 mt-3 bg-secondary text-light  text-center  mx-auto" onClick={() => setViewMore(true)}>
-            <h5 className="fw-bold " >
-              LOAD MORE
-            </h5>
-          </div>
-        )}
+       
       </div>
       {viewModal && (
         <Modal>

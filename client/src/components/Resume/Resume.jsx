@@ -1,6 +1,7 @@
 import { Button } from "react-bootstrap";
 import "./Resume.scss";
 import pdf from '../../assets/images/pdf.svg'
+import { Link } from "react-router-dom";
 
 
 function Resume() {
@@ -10,16 +11,16 @@ function Resume() {
         <div className="section-title">
           <h1 className="fw-bold ">Resume</h1>
         </div>
-        <a
-  href='../../assets/PDF/Jijin_vj_Resume_Web_Developer.pdf'
-  target='_blank'
-  rel='noopener noreferrer'
-  download
+<Link
+to='https://drive.google.com/file/d/1izAfQnYZNDswN15U-KS_t8Fd9Awp-92j/view?pli=1'
+target='_blank'
+rel='noopener noreferrer'
+download
 >
-  <Button className='download-btn bg-secondary border-0 my-3 py-auto justify-content-center align-items-center'>
-    Download Resume <img src={pdf} alt='pdf' width={35} />
-  </Button>
-</a>
+<Button className='download-btn bg-secondary border-0 my-3 py-auto justify-content-center align-items-center'>
+  Download Resume <img src={pdf} alt='pdf' width={35} />
+</Button>
+</Link>
 
 
         <div className="row fw-semibold">

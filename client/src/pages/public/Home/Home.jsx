@@ -172,7 +172,7 @@ function Home() {
         <Projects />
       </section>
       <section id="contact">
-        <ContactForm />
+        {/* <ContactForm /> */}
       </section>
       <section className="scroll_top position-relative">
         <div className=" inner_div position-fixed end-0 bg-secondary py-2 px-2  rounded-pill ">
