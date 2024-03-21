@@ -59,7 +59,7 @@ function Projects() {
               className="rounded-3 border border-2"
               loading="lazy"
             />
-            <div className="position-absolute z-5 top-50 start-50 translate-middle text-light text-center ">
+            <div className="position-absolute z-5 top-50 start-50 translate-middle  text-center ">
               <h4 className="fw-bold  shadow-sm p-0 m-0">Job data scraper</h4>
               <p className="p-0 m-0 fw-semibold ">2024</p>
             </div>
