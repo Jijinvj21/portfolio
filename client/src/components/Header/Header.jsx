@@ -21,7 +21,7 @@ function Header() {
                 <Breadcrumb.Item onClick={() => handleContactClick("skills")}>Skills</Breadcrumb.Item>
                 <Breadcrumb.Item onClick={() => handleContactClick("resume")}>Resume</Breadcrumb.Item>
                 <Breadcrumb.Item onClick={() => handleContactClick("projects")}>Projects</Breadcrumb.Item>
-                <Breadcrumb.Item onClick={() => handleContactClick("contact")}>Contact</Breadcrumb.Item>
+                {/* <Breadcrumb.Item onClick={() => handleContactClick("contact")}>Contact</Breadcrumb.Item> */}
             </Breadcrumb>
         </Container>
     );

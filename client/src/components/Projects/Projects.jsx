@@ -25,17 +25,46 @@ function Projects() {
   return (
     <section className="projects_section pb-5">
       <div className="d-flex">
-      <h1 className="fw-bold">Projects</h1>
-      {!viewMore && (
-          <div className=" rounded-3 py-1  bg-secondary text-light  text-center  ms-auto  p-2 my-auto" onClick={() => setViewMore(true)}>
-            <p className="fw-bold " >
-              LOAD MORE
-            </p>
+        <h1 className="fw-bold">Projects</h1>
+        {!viewMore && (
+          <div
+            className=" rounded-3 py-1  bg-secondary text-light  text-center  ms-auto  p-2 my-auto"
+            onClick={() => setViewMore(true)}
+          >
+            <p className="fw-bold ">LOAD MORE</p>
           </div>
         )}
       </div>
       <div className="p-5">
         <div className="cards  d-flex flex-wrap justify-content-center gap-5">
+          {/* test */}
+          <div
+            className="card rounded-3 p-3 position-relative  "
+            onClick={() => {
+              setViewModal(true);
+              setModalData({
+                image:
+                  "https://lh3.googleusercontent.com/pNBtNnIAD4gkRGHc2KvRxUbfhW4lTTTjuz7cwX-oUep4Hs406iBEN9hzfyvBNjRTsRWk2bUV-uR9rUVqZDzft2EQ_8g=s1280-w1280-h800",
+                name: "JOB DATA SCRAPER",
+                tech: "HTML, CSS, JS",
+                type: "CHORME EXTENSION",
+                ProjectLink:
+                  "https://chromewebstore.google.com/detail/job-data-scraper/mmcdpoflcofjdchmmdkfkiaoflcdjjcn?hl=en&authuser=0",
+              });
+            }}
+          >
+            <img
+              src="https://lh3.googleusercontent.com/pNBtNnIAD4gkRGHc2KvRxUbfhW4lTTTjuz7cwX-oUep4Hs406iBEN9hzfyvBNjRTsRWk2bUV-uR9rUVqZDzft2EQ_8g=s1280-w1280-h800"
+              alt="godox"
+              className="rounded-3 border border-2"
+              loading="lazy"
+            />
+            <div className="position-absolute z-5 top-50 start-50 translate-middle text-light text-center ">
+              <h4 className="fw-bold  shadow-sm p-0 m-0">Job data scraper</h4>
+              <p className="p-0 m-0 fw-semibold ">2024</p>
+            </div>
+          </div>
+          {/* test */}
           <div
             className="card rounded-3 p-3 position-relative  "
             onClick={() => {
@@ -50,7 +79,12 @@ function Projects() {
               });
             }}
           >
-            <img src={godox} alt="godox" className="rounded-3 " loading="lazy"  />
+            <img
+              src={godox}
+              alt="godox"
+              className="rounded-3 "
+              loading="lazy"
+            />
             <div className="position-absolute z-5 top-50 start-50 translate-middle text-light text-center ">
               <h4 className="fw-bold  shadow-sm p-0 m-0">Godox</h4>
               <p className="p-0 m-0 fw-semibold ">2022</p>
@@ -71,7 +105,12 @@ function Projects() {
               });
             }}
           >
-            <img src={Rental} alt="Rental" className="rounded-3 "  loading="lazy"/>
+            <img
+              src={Rental}
+              alt="Rental"
+              className="rounded-3 "
+              loading="lazy"
+            />
             <div className="position-absolute z-5 top-50 start-50 translate-middle text-light text-center ">
               <h4 className="fw-bold  shadow-sm p-0 m-0">Rental</h4>
               <p className="p-0 m-0 fw-semibold ">2023</p>
@@ -87,17 +126,25 @@ function Projects() {
                 tech: "React | FireStore | Google Auth | Tailwind | Netlify",
                 type: "WEB DEVELOPMENT",
                 GitLink: "https://github.com/Jijinvj21/passwordGenerator",
-                ProjectLink: "https://password-generater-w-react-firebase.netlify.app/",
+                ProjectLink:
+                  "https://password-generater-w-react-firebase.netlify.app/",
               });
             }}
           >
-            <img src={Password} alt="Password" className="rounded-3 "loading="lazy" />
+            <img
+              src={Password}
+              alt="Password"
+              className="rounded-3 "
+              loading="lazy"
+            />
             <div className="position-absolute z-5 top-50 start-50 translate-middle text-light text-center ">
               <h4 className="fw-bold  shadow-sm p-0 m-0">Password Generator</h4>
               <p className="p-0 m-0 fw-semibold ">2023</p>
             </div>
           </div>
-          <div
+          {viewMore && (
+            <>
+              <div
                 className="card rounded-3 p-3 position-relative  "
                 onClick={() => {
                   setViewModal(true);
@@ -111,15 +158,17 @@ function Projects() {
                   });
                 }}
               >
-                <img src={Weather} alt="Weather" className="rounded-3 " loading="lazy" />
+                <img
+                  src={Weather}
+                  alt="Weather"
+                  className="rounded-3 "
+                  loading="lazy"
+                />
                 <div className="position-absolute z-5 top-50 start-50 translate-middle text-light text-center ">
                   <h4 className="fw-bold  shadow-sm p-0 m-0">Weather App</h4>
                   <p className="p-0 m-0 fw-semibold ">2023</p>
                 </div>
               </div>
-          {viewMore && (
-            <>
-              
               <div
                 className="card rounded-3 p-3 position-relative border-none  "
                 onClick={() => {
@@ -134,7 +183,12 @@ function Projects() {
                   });
                 }}
               >
-                <img src={ToDo} alt="To-Do" className="rounded-3  border" loading="lazy"/>
+                <img
+                  src={ToDo}
+                  alt="To-Do"
+                  className="rounded-3  border"
+                  loading="lazy"
+                />
                 <div className="position-absolute z-5 top-50 start-50 translate-middle   text-center ">
                   <h4 className="fw-bold   p-0 m-0">To-Do List</h4>
                   <p className="p-0 m-0 fw-semibold ">2023</p>
@@ -154,7 +208,12 @@ function Projects() {
                   });
                 }}
               >
-                <img src={Netflix} alt="Netflix" className="rounded-3 "loading="lazy" />
+                <img
+                  src={Netflix}
+                  alt="Netflix"
+                  className="rounded-3 "
+                  loading="lazy"
+                />
                 <div className="position-absolute z-5 top-50 start-50 translate-middle text-light text-center ">
                   <h4 className="fw-bold  shadow-sm p-0 m-0">Netflix</h4>
                   <p className="p-0 m-0 fw-semibold ">2023</p>
@@ -163,7 +222,6 @@ function Projects() {
             </>
           )}
         </div>
-       
       </div>
       {viewModal && (
         <Modal>
@@ -193,15 +251,17 @@ function Projects() {
                   VIEW PROJECT{" "}
                 </Button>
               </a>
-              <a
-                href={modalData.GitLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button className="rounded-pill px-4 px-md-5 py-md-2 bg-secondary boarder border-secondary fw-bold">
-                  {modalData.GitLink2 ? "FRONTEND REPO" : "GITHUB REPO"}
-                </Button>
-              </a>
+              {modalData.GitLink && (
+                <a
+                  href={modalData.GitLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="rounded-pill px-4 px-md-5 py-md-2 bg-secondary boarder border-secondary fw-bold">
+                    {modalData.GitLink2 ? "FRONTEND REPO" : "GITHUB REPO"}
+                  </Button>
+                </a>
+              )}
               {modalData.GitLink2 && (
                 <a
                   href={modalData.GitLink2}
