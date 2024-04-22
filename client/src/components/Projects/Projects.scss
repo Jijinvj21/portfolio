@@ -1,7 +1,14 @@
 .projects_section {
     .cards {
         .card {
-            // img {
+            width: 505px;
+            height: 250px;
+
+            @media only screen and (max-width: 765px) {
+                width: 239px;
+                height: 140px;
+            }
+            img {
                 width: 505px;
                 height: 250px;
 
@@ -9,7 +16,7 @@
                     width: 239px;
                     height: 140px;
                 }
-            // }
+            }
         }
     }
     .modal_section{
